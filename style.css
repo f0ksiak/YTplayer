@@ -1,5 +1,17 @@
+#player1{
+    display: none;
+}
+#station{
+    display: none;
+}
 #radio{
     position: fixed;
     bottom: 0;
     left: 0;
+    width: 8vw;
+    height: 10vh;
+}
+#buttons {
+    left: 0;
+    bottom: 0;
 }

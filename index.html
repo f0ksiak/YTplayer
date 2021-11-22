@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,20 +13,24 @@
     
 
     <div id="radio">
+        <img src="radio.png" alt="Radio icon" width="80" height="50">
         <div id="buttons">
-        <button onclick="lofi()">Lofi</button>
-        <button onclick="house()">House</button>
-        <button onclick="rock()">Rock</button>
-        <br>
         <button class="button" id="play-button">PLAY</button>
 		<button class="button" id="pause-button">PAUSE</button>
+        <form>  
+            <select id = "option" onchange = "dropdownMenu()" >  
+            <option> ---Choose music--- </option>  
+            <option> Lofi </option>  
+            <option> House </option>  
+            <option> Rock </option>  
+            </select>  
+                <input type = "text" id = "station">  
+            </form>  
         </div>
-
         <div id="player1">
             <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
-        <button onclick="hideRadio()">Radio</button>
     </div>
         
     <script src="script.js"></script> 
