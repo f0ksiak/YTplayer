@@ -1,17 +1,5 @@
-.container {
-    margin: 100px 400px;
-}
-
-.no-box {
-    padding-left: 30px;
-    font-size: 60px;
-}
-
-.btn {
-    background-color: rgb(179, 179, 179);
-}
-
-.btn:hover {
-    color: white;
-    background-color: green;
+#radio{
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }

@@ -9,17 +9,23 @@
 
 </head>
 <body>
-    <button onclick="radioSelector()">Open radio selector</button>
+    
 
     <div id="radio">
-        <button onclick="radioSelect1()">Lofi</button>
-        <button onclick="radioSelect2()">House</button>
+        <div id="buttons">
+        <button onclick="lofi()">Lofi</button>
+        <button onclick="house()">House</button>
+        <button onclick="rock()">Rock</button>
+        <br>
+        <button class="button" id="play-button">PLAY</button>
+		<button class="button" id="pause-button">PAUSE</button>
+        </div>
+
         <div id="player1">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div id="player2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GDQnA1LVCWA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        
+        <button onclick="hideRadio()">Radio</button>
     </div>
         
     <script src="script.js"></script> 
