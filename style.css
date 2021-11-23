@@ -15,9 +15,11 @@
     position: fixed;
     left: 0;
     bottom: 0;
+    background-color: #d7f6ff;
+    display: block;
 }  
 #radioImage{
-    background-image: url("radio.png");
+    background: url(radio.png) center center;
     background-size: cover;
     position: center;
     bottom: 38px;
@@ -28,5 +30,17 @@
 .input-group{
     width: 20vw;
     left:0px;
+    position: fixed;
+}
+
+#exitButton{
+    right: 80vw;
+    position: fixed;
+}
+#radio{
+    display: none;
+}
+#showRadio{
+    right: 20px;
     position: fixed;
 }

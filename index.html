@@ -14,27 +14,34 @@
 
 </head>
 <body>
+    
+    <button id="showRadio" type="button" class="btn btn-danger" onclick="showRadio()"><i class="fab fa-youtube"></i></button>
 
 
 
       </body>
+      <div id="player1">
+        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <div id="radio">
-        <div id="player1">
-            <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="radioImage">
+            <div id="exitButton">
+                <button type="button" class="btn btn-outline-warning" id="minimalize-button" onclick="minimalize()"><i class="fas fa-window-minimize"></i></button>
+                <button type="button" class="btn btn-outline-danger" id="exit-button"onclick="exit()" ><i class="fas fa-times"></i></button>    
+            </div>
         </div>
-        <div id="radioImage"></div>
-        <div id="buttons" class="input-group">
+        <div id="buttons" class="input-group d-flex justify-content-around">
             <span class="input-group-btn">
                 <button class="btn btn-info" id="yt-button"><i class="fas fa-play"></i></button>
             </span>
         <form>  
-            <select class="form-select form-select-sm" aria-label=".form-select-sm example" size="1" id = "option" onchange = "dropdownMenu()" >  
+            <select class="form-select form-select-sm mt-1" aria-label=".form-select-sm example" size="1" id="option" onchange="dropdownMenu()" >  
             <option> ---Choose music--- </option>  
             <option selected> Lofi </option>  
             <option> House </option>  
             <option> Rock </option>  
             </select>  
-                <input type = "text" id = "station">  
+                <input type="text" id="station">  
             </form>  
         </div>     
     </div>
