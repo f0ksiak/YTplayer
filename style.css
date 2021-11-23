@@ -15,9 +15,18 @@
     position: fixed;
     left: 0;
     bottom: 0;
-}
-#image{
-    position: fixed;
+}  
+#radioImage{
+    background-image: url("radio.png");
+    background-size: cover;
+    position: center;
+    bottom: 38px;
     left: 0;
-    bottom: 34px;
-}   
+    width: 20vw;
+    height: calc(40vh - 38px);
+}
+.input-group{
+    width: 20vw;
+    left:0px;
+    position: fixed;
+}

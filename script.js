@@ -23,16 +23,6 @@ function onPlayerReady(event) {
           }
     });
   }
-  function onPlayerStateChange(state) {
-    
-    if(state == 1) {
-      playButton.innerHTML = '<i class="fas fa-pause"></i>';
-    }else{
-      playButton.innerHTML = '<i class="fas fa-play"></i>';
-    }
-  }
-
-
 
 
 var tag = document.createElement('script');
@@ -42,14 +32,18 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
 function dropdownMenu() {  
+  var playButton = document.getElementById("yt-button");
   var list = document.getElementById("option");  
   document.getElementById("station").value = list.options[list.selectedIndex].text;  
   var strUser = list.value;
   if(strUser=="Lofi"){
     document.getElementById("video").src= "https://www.youtube.com/embed/5qap5aO4i9A?controls=0&enablejsapi=1";
+    playButton.innerHTML = '<i class="fas fa-play"></i>';
   } if(strUser=="House"){
     document.getElementById("video").src= "https://www.youtube.com/embed/GDQnA1LVCWA?controls=0&enablejsapi=1";
+    playButton.innerHTML = '<i class="fas fa-play"></i>';
   } if(strUser=="Rock"){
     document.getElementById("video").src= "https://www.youtube.com/embed/-v9Pm9PYU8E?controls=0&enablejsapi=1";
+    playButton.innerHTML = '<i class="fas fa-play"></i>';
   }
   }  
