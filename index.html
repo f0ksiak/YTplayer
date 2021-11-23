@@ -5,36 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script defer src="all.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
-    
 
+
+
+      </body>
     <div id="radio">
-        <img src="radio.png" alt="Radio icon" width="80" height="50">
-        <div id="buttons">
-        <button class="button" id="play-button">PLAY</button>
-		<button class="button" id="pause-button">PAUSE</button>
+        <div id="player1">
+            <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <img src="radio.png" alt="Radio image" width="400" height="250" id="image">
+        <div id="buttons" class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-info" id="yt-button"><i class="fas fa-play"></i></button>
+            </span>
         <form>  
-            <select id = "option" onchange = "dropdownMenu()" >  
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" size="1" id = "option" onchange = "dropdownMenu()" >  
             <option> ---Choose music--- </option>  
-            <option> Lofi </option>  
+            <option selected> Lofi </option>  
             <option> House </option>  
             <option> Rock </option>  
             </select>  
                 <input type = "text" id = "station">  
             </form>  
-        </div>
-        <div id="player1">
-            <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/5qap5aO4i9A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
+        </div>     
     </div>
         
     <script src="script.js"></script> 
 </body>
 </html>
-   
+
+  
     

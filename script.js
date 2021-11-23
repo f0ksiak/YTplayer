@@ -1,6 +1,4 @@
 var player;
-
-
 function onYouTubePlayerAPIReady() {
 
     player = new YT.Player('video', {
@@ -14,22 +12,34 @@ function onYouTubePlayerAPIReady() {
 function onPlayerReady(event) {
 
 
-    var playButton = document.getElementById("play-button");
+    var playButton = document.getElementById("yt-button");
     playButton.addEventListener("click", function() {
-        player.playVideo();
-    });
-
-    var pauseButton = document.getElementById("pause-button");
-    pauseButton.addEventListener("click", function() {
-        player.pauseVideo();
+        if(player.getPlayerState()==1){ 
+          playButton.innerHTML = '<i class="fas fa-play"></i>';
+          player.pauseVideo();
+          }else{
+            playButton.innerHTML = '<i class="fas fa-pause"></i>';
+            player.playVideo();
+          }
     });
   }
+  function onPlayerStateChange(state) {
+    
+    if(state == 1) {
+      playButton.innerHTML = '<i class="fas fa-pause"></i>';
+    }else{
+      playButton.innerHTML = '<i class="fas fa-play"></i>';
+    }
+  }
+
+
 
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 
 function dropdownMenu() {  
   var list = document.getElementById("option");  
