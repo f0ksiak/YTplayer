@@ -65,5 +65,11 @@ function dropdownMenu() {
   } if(strUser=="Rock"){
     video.src= "https://www.youtube.com/embed/-v9Pm9PYU8E?controls=0&enablejsapi=1";
     playButton.innerHTML = '<i class="fas fa-play"></i>';
+  } if(strUser=="Chillout"){
+    video.src= "https://www.youtube.com/embed/9UMxZofMNbA?controls=0&enablejsapi=1";
+    playButton.innerHTML = '<i class="fas fa-play"></i>';
+  } if(strUser=="Jazz"){
+    video.src= "https://www.youtube.com/embed/Yvl0oR-r92Y?controls=0&enablejsapi=1";
+    playButton.innerHTML = '<i class="fas fa-play"></i>';
   }
   }  
